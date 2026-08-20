@@ -216,3 +216,38 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project data
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Keep empty data directories visible in Git
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+
+# Generated models and experiment artifacts
+artifacts/
+/models/
+mlruns/
+*.pkl
+*.joblib
+*.onnx
+
+# Large data files
+*.csv
+*.parquet
+*.feather
+*.zip
+
+# Logs and temporary files
+logs/
+*.log
+.pytest_cache/
+.ipynb_checkpoints/
